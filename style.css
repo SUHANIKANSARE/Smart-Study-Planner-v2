@@ -1,0 +1,159 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+    margin:0;
+    padding:20px;
+}
+
+header{
+    background:#4f46e5;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+}
+
+section{
+    background:white;
+    margin-top:20px;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+div{
+    background:#eef2ff;
+    margin:10px 0;
+    padding:10px;
+    border-radius:10px;
+}
+
+button{
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#3730a3;
+}
+
+progress{
+    width:100%;
+    height:20px;
+}
+.subject-card {
+    display: inline-block;
+    width: 28%;
+    margin: 1%;
+    padding: 15px;
+    background-color: #eef2ff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f8fafc;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+}
+progress {
+    width: 100%;
+    height: 20px;
+}
+progress {
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+}
+#timer {
+    font-size: 40px;
+    text-align: center;
+    color: #4f46e5;
+    margin: 15px;
+}
+
+#startBtn,
+#pauseBtn,
+#resetBtn {
+    margin: 5px;
+}
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+header {
+    padding: 35px 20px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 0 0 12px 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 0;
+}
+section {
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.subject-card {
+    box-sizing: border-box;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section {
+        width: auto;
+        margin: 15px 0;
+    }
+
+    .subject-card {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button {
+        margin: 5px 2px;
+    }
+}

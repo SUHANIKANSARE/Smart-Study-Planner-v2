@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>📚 Smart Study Planner</h1>
+        <p>Plan your study. Track your progress. Achieve your goals.</p>
+    </header>
+
+    <!-- Welcome Message -->
+    <section>
+        <h2>👋 Welcome!</h2>
+        <p>Welcome to your Smart Study Planner Dashboard.</p>
+    </section>
+
+    <!-- Subject Cards -->
+    <section>
+        <h2>📖 My Subjects</h2>
+
+        <div class="subject-card" onclick="openSubject('Computer Science')">
+             <h3>💻 Computer Science</h3>
+             <p>Study your computer science topics.</p>
+        </div>
+
+        <div class="subject-card" onclick="openSubject('Artificial Intelligence')">
+             <h3>🤖 Artificial Intelligence</h3>
+             <p>Learn AI concepts and algorithms.</p>
+        </div>
+
+        <div class="subject-card" onclick="openSubject('Cyber Security')">
+             <h3>🔐 Cyber Security</h3>
+             <p>Practice security and networking topics.</p>
+        </div>
+
+        <button id="addSubjectBtn">➕ Add Subject</button>
+
+    </section>
+
+    <!-- Subject Details -->
+    <section id="subjectDetails" style="display:none;">
+
+         <h2 id="selectedSubjectTitle">📚 Subject</h2>
+
+        <h3>📌 Important Topics</h3>
+        <input type="text" id="topicInput" placeholder="Enter important topic">
+        <button id="addTopicBtn">➕ Add Topic</button>
+
+        <ul id="topicList"></ul>
+
+        <h3>❓ Important Questions</h3>
+        <input type="text" id="questionInput" placeholder="Enter important question">
+        <button id="addQuestionBtn">➕ Add Question</button>
+
+        <ul id="questionList"></ul>
+
+        <h3>📝 My Notes</h3>
+        <textarea id="notesInput" placeholder="Write your notes here..."></textarea>
+        <br>
+        <button id="saveNotesBtn">💾 Save Notes</button>
+
+        <p id="notesStatus"></p>
+
+    </section>
+    
+    <!-- Today's Tasks -->
+    <section>
+        <h2>✅ Today's Tasks</h2>
+        <input type="text" id="searchTask" placeholder="Search your task...">
+
+<ul id="taskList">
+    <li>
+        <input type="checkbox">
+        Complete Computer Science notes
+    </li>
+
+    <li>
+        <input type="checkbox">
+        Practice AI questions
+    </li>
+
+    <li>
+        <input type="checkbox">
+        Revise Cyber Security
+    </li>
+</ul>
+
+        <button id="addTaskBtn">➕ Add Task</button>
+    </section>
+
+    <!-- Progress Section -->
+    <section>
+        <h2>📊 Study Progress</h2>
+
+        <p>🎯 Daily Goal</p>
+        <input type="number" id="dailyGoal" min="1" placeholder="Enter number of tasks">
+        <p id="progressText">Today's Progress: 0%</p>
+
+        <progress id="progressBar" value="0" max="100"></progress>
+    </section>
+
+    <!-- Study Statistics -->
+    <section>
+         <h2>📈 Study Statistics</h2>
+
+         <p id="completedStats">Completed Tasks: 0</p>
+         <p id="pendingStats">Pending Tasks: 0</p>
+    </section>
+
+    <!-- Study Reminder -->
+    <section>
+         <h2>⏰ Study Reminder</h2>
+
+         <input type="time" id="reminderTime">
+         <button id="setReminderBtn">Set Reminder</button>
+
+        <p id="reminderStatus"></p>
+    </section>
+
+    <!-- Subject-wise Progress -->
+    <section>
+         <h2>📚 Subject-wise Progress</h2>
+
+         <p>💻 Computer Science</p>
+         <progress id="csProgress" value="0" max="100"></progress>
+
+         <p>🤖 Artificial Intelligence</p>
+         <progress id="aiProgress" value="0" max="100"></progress>
+
+         <p>🔐 Cyber Security</p>
+         <progress id="cyberProgress" value="0" max="100"></progress>
+    </section>
+    
+    <!-- Study Timer -->
+    <section>
+        <h2>⏱️ Study Timer</h2>
+
+        <h3 id="timer">25:00</h3>
+
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+    </section>
+<script type="module" src="script.js"></script>
+</body>
+</html>
